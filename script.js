@@ -29,3 +29,7 @@ form.addEventListener('submit', (event) => {
     form.reset()
   }
 })
+function removeTask(event) {
+  const listItem = event.target.closest('li');
+  listItem.remove();
+}

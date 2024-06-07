@@ -1,0 +1,63 @@
+<!-- 7jun 2359-->
+<!--githublink-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>To Do List</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h2 class="greeting">
+        Welcome!
+      </h2>
+      <h5 class="encourage">Make each day your masterpiece.</h5>
+    </div>
+
+    <main>
+      <div class="todo-container">
+        <div class="create-todo-form">
+          <h3>CREATE A TODO</h3>
+          <form id="new-todo-form">
+            <label for="content">
+              <h4>What's on your todo list?</h4>
+            </label>
+            <div class="row">
+              <input type="text" name="'content" id="content" placeholder="e.g. make a video" />
+            </div>
+            <label for="add-button">
+              <h4>Select the priority</h4>
+            </label>
+            <div id="priority-select">
+              <select id="priority">
+                <option value="select">select</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+            <div class="btncontainer">
+              <button id="add-button" type="submit">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="todo-container">
+        <ul id="list-container"> </ul>
+      </div>
+    </main>
+
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

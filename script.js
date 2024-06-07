@@ -3,19 +3,6 @@ const content = document.getElementById("content");
 const priority = document.getElementById("priority");
 const listContainer = document.getElementById("list-container");
 
-
-// const btn = document.getElementById("add-button");
-// btn.addEventListener('click', function () {
-//   if (content.value === '') {
-//     alert("You must write something!");
-//   } else {
-//     let li = document.createElement("li");
-//     li.innerHTML = content.value;
-//     listContainer.appendChild(li);
-//   }
-//   content.value = "";
-// })
-
 form.addEventListener('submit', (event) => {
   event.preventDefault()
   if (content.value === '') {
@@ -42,19 +29,3 @@ form.addEventListener('submit', (event) => {
     form.reset()
   }
 })
-
-function removeTask(event) {
-  const listItem = event.target.closest('li');
-  listItem.remove();
-}
-
-
-
-
-
-
-// const addTask = document.createElement('li');
-// addTask.classList.add();
-// addTask.innerText(content.value && prioritySelect.value);
-// console.log(addTask);
-
